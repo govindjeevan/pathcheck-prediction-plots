@@ -113,5 +113,5 @@ button {
     .desc.active{
         font-size: 30px !important;
     }
-  }.legend{list-style:none;display:flex;font-family:system-ui}.legend li{float:center;margin-right:25px;display:inline;}.legend span{float:left;width:15px;height:15px;margin-right:8px}.legend .low{background-color:#faa57d;}.legend .medium{background-color:#f24f2c;}.legend .high{background-color:#c40000;}.legend .veryhigh{background-color:#a10b11;}
+  }.legend{list-style:none;display:flex;font-family:system-ui}.legend li{float:center;margin-right:25px;display:inline;}.legend span{float:left;width:15px;height:15px;margin-right:8px}.legend .low{background-color:#faa57d;}.legend .medium{background-color:#f24f2c;}.legend .high{background-color:#c40000;}.legend .veryhigh{background-color:#a10b11;}.legend .insufficientdata{background-color: #b1b3b1;}
   
