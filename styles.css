@@ -72,18 +72,19 @@ button {
   h3{
     padding:5px 0 0 0;
     margin-block-end: 15px;
-    font-size: 50px !important;
+    font-size: 30px !important;
 }
 
 
   .info{
     width:50%; text-align:center;margin:auto;  padding: 10px 0 0 0;
+    font-size: 15px;
   }
   
   .desc{
       margin-block-start: 10;
       margin-block-end: 20px;
-      font-size: 30px !important;
+     
       font-family: system-ui;
       background-color: white;
       max-height: 0;
@@ -105,6 +106,7 @@ button {
     }
       .info{
           width: 90%;
+          font-size: 30px;
       }
       button.learn-more{
           font-size: 25px;
