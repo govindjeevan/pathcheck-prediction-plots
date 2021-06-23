@@ -69,13 +69,22 @@ button {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
   }
+  h3{
+    padding:5px 0 0 0;
+    margin-block-end: 15px;
+    font-size: 50px !important;
+}
+
 
   .info{
-    width:50%; text-align:center;margin:auto; margin-bottom: 20px; padding: 20px;
+    width:50%; text-align:center;margin:auto;  padding: 10px 0 0 0;
   }
   
   .desc{
-      font-size: 0px;
+      margin-block-start: 10;
+      margin-block-end: 20px;
+      font-size: 30px !important;
+      font-family: system-ui;
       background-color: white;
       max-height: 0;
       overflow: hidden;
@@ -83,11 +92,9 @@ button {
   }
 
   .desc.active{
-    font-size: inherit;
     background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    height:auto;
+    max-height: 300px;
   }
 
   @media (max-width: 1000px) {
@@ -111,7 +118,6 @@ button {
       font-size: 30px!important;
     }
     .desc.active{
-        font-size: 30px !important;
     }
   }.legend{list-style:none;display:flex;font-family:system-ui}.legend li{float:center;margin-right:25px;display:inline;}.legend span{float:left;width:15px;height:15px;margin-right:8px}.legend .low{background-color:#faa57d;}.legend .medium{background-color:#f24f2c;}.legend .high{background-color:#c40000;}.legend .veryhigh{background-color:#a10b11;}.legend .insufficientdata{background-color: #b1b3b1;}
   
