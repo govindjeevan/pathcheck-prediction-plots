@@ -71,11 +71,11 @@ button {
   }
 
   .info{
-    width:50%; text-align:center;margin:auto; padding: 20px;
+    width:50%; text-align:center;margin:auto; margin-bottom: 20px; padding: 20px;
   }
   
   .desc{
-      padding: 0 18px;
+      font-size: 0px;
       background-color: white;
       max-height: 0;
       overflow: hidden;
@@ -83,11 +83,11 @@ button {
   }
 
   .desc.active{
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    font-size: inherit;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
   @media (max-width: 1000px) {
@@ -110,7 +110,7 @@ button {
     .legend {
       font-size: 30px!important;
     }
-    .desc{
+    .desc.active{
         font-size: 30px !important;
     }
   }.legend{list-style:none;display:flex;font-family:system-ui}.legend li{float:center;margin-right:25px;display:inline;}.legend span{float:left;width:15px;height:15px;margin-right:8px}.legend .low{background-color:#faa57d;}.legend .medium{background-color:#f24f2c;}.legend .high{background-color:#c40000;}.legend .veryhigh{background-color:#a10b11;}
