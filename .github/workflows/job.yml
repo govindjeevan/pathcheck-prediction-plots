@@ -35,4 +35,4 @@ jobs:
       - run: R -e 'renv::restore()'
       # execute Rscript
       - run: ls 
-      - run: Rscript scripts/test.R
+      - run: Rscript scripts/hotspot_prediction/test.R
