@@ -34,4 +34,5 @@ jobs:
       # install c++ dependencies and install necessary packages
       - run: R -e 'renv::restore()'
       # execute Rscript
-      - run: Rscript scripts/test.R
+      - run: ls $GITHUB_WORKSPACE
+      - run: Rscript $GITHUB_WORKSPACE/scripts/test.R
