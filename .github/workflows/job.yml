@@ -35,4 +35,5 @@ jobs:
       - run: R -e 'renv::restore()'
       # execute Rscript
       - run: ls $GITHUB_WORKSPACE
-      - run: Rscript $GITHUB_WORKSPACE/scripts/test.R
+      - run: echo $GITHUB_WORKSPACE
+      - run: Rscript $GITHUB_WORKSPACEscripts/test.R
