@@ -2,20 +2,6 @@ library(rtweet)
 library(ggplot2)
 library(glue)
 
-# fail on missing env vars
-missing_env <- function(key){
-  result <- is.na(Sys.getenv(key,unset = NA_character_))
-  if(result) warning(paste0("Missing env var: ",key))
-  result
-}
-
-if(any(
-  missing_env('apikey'),
-  missing_env("apisecretkey"),
-  missing_env("access_token"),
-  missing_env("access_token_secret")
-)) stop("credentials not found")
-
 
 # curve
 point_len <- sample(c( 20, 25, 30, 35,40),1)
@@ -53,15 +39,7 @@ color_ = sample(
     1)
 background_color= sample(c("#ffffe6","#FFCC99" ),1)
 message(glue("using \"{title}\" with foreground: {color_} and background: {background_color}"))
-## authenticate and get token
-token <- create_token(
-    app = "tweetashape",
-    consumer_key = Sys.getenv("apikey"),
-    consumer_secret = Sys.getenv("apisecretkey"),
-    access_token = Sys.getenv("access_token"),
-    access_secret = Sys.getenv("access_token_secret"),
-    set_renv = FALSE
-    )
+
 
 # plot the plot
 tmp <- tempfile(fileext = ".png")
