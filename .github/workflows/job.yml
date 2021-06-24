@@ -36,4 +36,4 @@ jobs:
       # execute Rscript
       - run: ls $GITHUB_WORKSPACE
       - run: echo $GITHUB_WORKSPACE
-      - run: Rscript $GITHUB_WORKSPACEscripts/test.R
+      - run: Rscript /$GITHUB_WORKSPACE/scripts/test.R
