@@ -1,4 +1,3 @@
-library(rtweet)
 library(ggplot2)
 library(glue)
 
